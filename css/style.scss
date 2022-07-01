@@ -138,7 +138,7 @@ section {
 
 
     .logo{
-        @include titleText(2.5rem);
+        @include titleText(2rem);
 
         span {
             color: var(--yellow);
@@ -146,7 +146,7 @@ section {
     }
 
     .navbar a{
-        @include titleText(2rem);
+        @include titleText(1.7rem);
         margin: 0 1rem;
 
         &:hover{
@@ -283,67 +283,62 @@ section {
 
 .contact-info{
     position: fixed;
-    top: 0;
-    right: 0;
+    top:0; right:0;
     width: 35rem;
     background: var(--white);
     height: 100%;
     text-align: center;
-    z-index: 110000;
-    padding: 0 2rem;
+    z-index: 1100;
+    padding:0 2rem;
     padding-top: 5rem;
     display: none;
-
-    &:active{
-        box-shadow: 0 0 0 100vw rgba(0,0,0,.7);
-        display: block;
+ 
+    &.active{
+       box-shadow: 0 0 0 100vw rgba(0,0,0,.7);
+       display: block;
     }
-
+ 
     #close-contact-info{
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        cursor: pointer;
-        font-size: 4rem;
-        color: var(--black);
-
-        &:hover{
-            transform: rotate(90deg);
-        }
+       position: absolute;
+       top:1rem; right: 1.5rem;
+       cursor: pointer;
+       font-size: 4rem;
+       color:var(--black);
+ 
+       &:hover{
+          transform: rotate(140deg);
+       }
     }
-
+ 
     .info{
-        padding: 2rem 0;
-
-        i{
-            @include iconsBox();
-            margin-bottom: .5rem;
-        }
-
-        h3{
-            @include titleText(2rem);
-            padding: 1rem 0;
-        }
-
-
-        p{
-            @include graphText(1.5rem);
-        }
+       padding:2rem 0;
+ 
+       i{
+          @include iconsBox();
+          margin-bottom: .5rem;
+       }
+ 
+       h3{
+          @include titleText(2rem);
+          padding:1rem 0;
+       }
+ 
+       p{
+          @include graphText(1.5rem);
+       }
     }
-
-
+ 
     .share{
-        padding-top: 2rem;
-        border-top: var(--border);
-        margin-top: 1rem;
-
-
-        a{
-            @include iconsBox();
-            margin: 0 .3rem;
-        }
+       padding-top: 2rem;
+       border-top: var(--border);
+       margin-top: 1rem;
+ 
+       a{
+          @include iconsBox();
+          margin:0 .3rem;
+       }
     }
-}
+ }
 
 .home{
     padding: 0;
@@ -670,11 +665,60 @@ section {
     }
 }
 
+.blogs{
+    background: var(--light-bg);
+
+    .slide{
+        text-align: center;
+
+        &:hover .image img{
+            transform: scale(1.1);
+        }
+
+        .image{
+            height: 25rem;
+            width: 90%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: -3rem;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content{
+            padding: 2rem;
+            padding-top: 5rem;
+            background: var(--white);
+            box-shadow: 0 1rem 1.5rem rgba(0,0,0,.2);
+
+
+            h3{
+                @include titleText(2rem);
+            }
+
+            p{
+                padding: 1rem 0;
+                @include graphText(1.4rem);
+            }
+        }
+    }
+}
 
 
 
+.logo-container{
+    text-align: center;
 
-
+    img{
+        height: 10rem;
+        pointer-events: none;
+        user-select: none;
+    }
+}
 
 
 

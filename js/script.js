@@ -68,3 +68,43 @@ var swiper = new Swiper(".reviews-slider", {
         },
     },
   });
+
+
+    
+var swiper = new Swiper(".blogs-slider", {
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+    },
+  });
+
+
+
+      
+var swiper = new Swiper(".logo-slider", {
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        450: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1000: {
+          slidesPerView: 5,
+        },
+    },
+  });
