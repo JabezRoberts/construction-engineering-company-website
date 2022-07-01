@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.scss">
     <title>Kinetic Engineering Ja</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 <body>
     
@@ -32,18 +36,130 @@
         <div id="search-btn" class="fas fa-search"></div>
         <div id="login-btn" class="fas fa-user"></div>
     </div>
+
+    <form action="" class="search-form">
+
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" id="fas fa-search"></label>
+    </form>
+
+    <form action="" class="login form">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email.." class="box">
+        <input type="password" placeholder="enter your password here" class="box">
+        <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Remember me</label>
+            <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>don't have an account <a href="#">create one!</a></p>
+    </form>
 </header>
+
+<div class="contact-info">
+
+    <div id="close-contact-info" class="fas fa-times">
+
+    </div>
+
+     <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>Phone Number</h3>
+        <p>+1 876 555 5555</p>
+        <p>+1 876 555 5555</p>
+     </div>
+
+     <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Address</h3>
+        <p>info@jabezroberts.com</p>
+        <p>hire@jabezroberts.com</p>
+     </div>
+
+     
+     <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Office Address</h3>
+        <p>Harbor Street, Kingston</p>
+        <p>Kingston, Jamaica</p>
+     </div>
+
+     <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+     </div>
+     
+
+</div>
 
 
 <!--Header Ends Here -->
 
 
+<!-- Home section starts -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+
+        <div class="swiper-wrapper">
+            
+            <section class="swiper-slide slide" style="background: url(/images/home-slide-1.jpg) no-repeat;">
+                <div class="content">
+                    <h3>We provide the best services</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam corporis laudantium tempora, vel reprehenderit?</p>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </section>
+
+                
+            <section class="swiper-slide slide" style="background: url(/images/home-slide-2.jpg) no-repeat;">
+                <div class="content">
+                    <h3>Making dreams come to life</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam corporis laudantium tempora, vel reprehenderit?</p>
+                    <a href="#" class="btn">get started</a>
+                </div>
+            </section>
+
+                
+            <section class="swiper-slide slide" style="background: url(/images/home-slide-3.jpg) no-repeat;">
+                <div class="content">
+                    <h3>from concept to creation</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam corporis laudantium tempora, vel reprehenderit?</p>
+                    <a href="#" class="btn">learn more</a>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
 
 
 
+<!-- Home Section ends -->
 
 
-    <script src="./js/script.js"></script>
+<!-- Second - About - Section  Starts -->
+
+
+<!-- Second - About - Section  Starts -->
+
+
+
+<!-- slider from swiperjs insert -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file -->
+<script src="./js/script.js"></script>
 
 </body>
 </html>
