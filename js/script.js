@@ -108,3 +108,30 @@ var swiper = new Swiper(".logo-slider", {
         },
     },
   });
+
+
+//TESTIMONIALS SWIPER (swiper js)
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  //Responsiv Breakpoints
+  breakpoints: {
+    //when window width is >= 600px
+
+    600: {
+      slidesPerView: 2
+    },
+
+    
+    1024: {
+      slidesPerView: 3
+    }
+
+  }
+
+});

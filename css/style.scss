@@ -1,88 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import '..//partials/mixins';
+@import '..//partials/config';
+@import '..//partials/general';
+@import '..//partials/header';
+@import '..//partials/services';
+@import '..//partials/specialists';
+@import '..//partials/testimonials';
+@import '..//partials/appointment';
+@import '..//partials/footer';
+@import '..//partials/projects';
+@import '..//partials/about';
+@import '..//partials/concrete';
+@import '..//partials/engineering';
 
 
-:root{
-    --yellow: #f5bf23;
-    --black: #111;
-    --white: #fff;
-    --light-color: #666;
-    --light-bg: #eee;
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    --border: .1rem solid rgba(0,0,0,.3);
-}
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-   
-}
 
 
-@mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-    gap: 2rem;    
-}
-
-@mixin titleText($titleSize) {
-    font-size: $titleSize;
-    color: var(--black);
-    text-transform: capitalize;
-}
-
-
-@mixin graphText($graphSize) {
-    font-size: $graphSize;
-    color: var(--light-color);
-    line-height: 2;
-}
-
-
-@mixin iconsBox() {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    background: var(--light-bg);
-    color: var(--black);
-    cursor: pointer;
-    text-align: center;
-
-    &:hover{
-        background: var(--black);
-        color: var(--white);
-    }
-}
-
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
-
-
-    &::-webkit-scrollbar{
-        width: 1rem;
-
-    }
-
-    &::-webkit-scrollbar-track{
-        background: transparent;
-
-    }
-
-
-    &::-webkit-scrollbar{
-        background: var(--yellow);
-
-    }
-}
 
 
 section {
@@ -225,6 +157,7 @@ section {
             padding-bottom: 1rem;
             text-transform: uppercase;
         }
+
 
         .box{
             width: 100%;
@@ -424,7 +357,6 @@ section {
             }
         }
 
-
         .content{
             flex: 1 1 41rem;
 
@@ -568,8 +500,10 @@ section {
 
 
 .reviews{
+   
 
     .slide{
+        margin: 0 20px;
 
         p{
             padding: 1.5rem;
@@ -714,23 +648,120 @@ section {
     text-align: center;
 
     img{
-        height: 10rem;
+        height: 5rem;
         pointer-events: none;
         user-select: none;
+    }
+
+    h2{
+        @include titleText(2rem);
+        text-align: left;
+        padding-bottom: 2rem;
     }
 }
 
 
 
 
+.contact-logo-container{
+ 
+        text-align: center;
+    
+        img{
+            height: 10rem;
+            pointer-events: none;
+            user-select: none;
+        }
+    
+        h2{
+            @include titleText(2rem);
+            text-align: left;
+            padding-bottom: 2rem;
+        }
+}
 
 
 
 
+.footer{
+    background-color: var(--yellow);
+    padding-bottom: 2rem;
+
+
+    &___container{
+        row-gap: 2rem;
+    }
+
+    &__logo,
+    &__title{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    &__logo{
+        display: inline-block;
+        font-weight: semi-bold;
+        color: var(--black);
+    }
+
+    &__description,
+    &__link{
+        font-size: .5rem;
+    }
+
+    &__links{
+        display: grid;
+        row-gap: .5rem;
+    }
+
+    &__link{
+        color: var(--light-bg);
+    }
+
+    &__social{
+        display: flex;
+        column-gap: 1.5rem;
 
 
 
+        &-link{
+            font-size: 1.25rem;
+            color: var(--white)
+        }
+    }
 
+    &__copy{
+        margin-top: 6rem;
+        text-align: center;
+        font-size: 2rem;
+        color: var(--black);
+
+    }
+}
+
+
+.section{
+    padding: 4.5rem 0 1rem;
+
+    &__title,
+    &__title-center{
+        font-size: 4rem;
+        color: #111;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+.svg{
+    &__color{
+        fill: var(--light-bg);
+    }
+
+    &__blob{
+        fill: var(--white);
+    }
+}
 
 
 
